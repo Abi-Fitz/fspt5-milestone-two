@@ -10,7 +10,7 @@ You can add as many tests as you see fit.
 ------------------*/
 
 class Building {
-  constructor() {
+  constructor(location, type) {
     this.location = "Japan";
     this.type = "Skyscrapper";
   }

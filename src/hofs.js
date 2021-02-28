@@ -22,9 +22,27 @@
 class Inhabitants {
   constructor(people) {
     this.people = people;
+    this.age = 0;
   }
 
-  getPeopleOver(age) {}
+  getPeopleOver() {
+    let inhabitants = [
+      { firstName: "John", lastName: "Smith", age: 40 },
+      { firstName: "Jane", lastName: "Doe", age: 68 },
+      { firstName: "Grace", lastName: "Hopper", age: 85 },
+      { firstName: "Bart", lastName: "Simpson", age: 10 }
+    ];
+
+    let people = this.inhabitants.getPeopleover(50);
+
+    for (let p of people) {
+      this.newInhabitants = [];
+      if (age >= 50) {
+        return people.filter();
+      }
+    }
+    return this.newIhabitants;
+  }
 }
 
 module.exports = Inhabitants;

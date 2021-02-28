@@ -14,20 +14,37 @@ describe("Building", () => {
     });
 
     it("should have properties for location and type", () => {
-      expect(Building.hasOwnProperty("location")).to.equal("Japan");
+      expect(Building.hasOwnProperty("location")).to.equal("true");
     });
-    expect(Building.hasOwnProperty("type")).to.equal("Skyscrapper");
+    expect(Building.hasOwnProperty("type")).to.equal("true");
   });
 
-  xdescribe("Location and type methods", () => {
-    xit("should have 2 methods", () => {
-      expect(hasMethods(startDate(), buildingType())).to.be.true;
-      const location = "Japan";
-      const type = "Skyscrapper";
-      Building.location = location;
-      Building.type = type;
-      expect(Building.buildingType()).to.exist;
-      expect(Building.startDate()).to.exist;
+  describe("startDate method", () => {
+    it("should exist on the Building prototype", () => {
+      expect(Building.prototype.startDate).to.exist;
     });
+
+    it("should return the location when called", () => {
+      const location = "Japan";
+      Building.location = location;
+    });
+
+    Building.type = type;
+    expect(Building.startDate()).to.equal(location);
+  });
+
+  describe("buildingType method", () => {
+    it("should exist on the Building prototype", () => {
+      expect(Building.prototype.buildingType).to.exist;
+    });
+
+    it("should return the location and type when called", () => {
+      const location = "Japan";
+      Building.location = location;
+      const type = "Skyscrapper";
+      Building.type = type;
+    });
+
+    expect(Building.buildingType()).to.equal([location, type]);
   });
 });

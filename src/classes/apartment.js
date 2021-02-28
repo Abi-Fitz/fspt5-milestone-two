@@ -14,6 +14,16 @@ extends the Building class. Test it!
 
 const Building = require("./building");
 
-class Apartment {}
+class Apartment extends Building {
+  constructor(location, type) {
+    super(China, Hostels);
+    this.height = 50;
+  }
+}
+
+hostelHeight();
+{
+  return (this.height = this.height * 2);
+}
 
 module.exports = Apartment;
