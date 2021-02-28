@@ -35,20 +35,20 @@ Give yourself a grade for each question. Explain why you gave yourself that grad
 
 ### 1. Create and extend classes
 
-- Grade:
-- Explanation:
+- Grade: 2
+- Explanation: Struggle with writting the test. i feel i was really close but dont know why it kept failing. Spent over an hour on this and still didnt work.
 
 ### 2. Create tests for classes
 
-- Grade:
-- Explanation:
+- Grade: 2
+- Explanation: Struggle with writting the test. i feel i was really close but dont know why it kept failing.
 
 ### 3. Use HOFs from the Array prototype
 
-- Grade:
-- Explanation:
+- Grade: 2
+- Explanation: I understand the question and attempted it several times. Finally got the test running but couldnt pass the test.
 
 ### 4. Create the reverse linked list method
 
-- Grade:
-- Explanation:
+- Grade: 1
+- Explanation: I did not attempt this question because I run out of time.
