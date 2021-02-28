@@ -9,6 +9,18 @@ You should test that they exist and that they work correctly.
 You can add as many tests as you see fit.
 ------------------*/
 
-class Building {}
+class Building {
+  constructor() {
+    this.location = "Japan";
+    this.type = "Skyscrapper";
+  }
+
+  startDate() {
+    console.log(`Construction will commence at ${this.location} on Monday.`);
+  }
+  buildingType() {
+    console.log(`We will be building a ${this.type} at this ${this.location}.`);
+  }
+}
 
 module.exports = Building;
